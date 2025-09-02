@@ -1,0 +1,78 @@
+<!-- src/main/resources/templates/fragments/footer.html -->
+<footer class="custom-footer text-light mt-5">
+    <div class="container py-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+        <!-- Left side -->
+        <div class="mb-3 mb-md-0">
+            <h5 class="fw-bold mb-1">🎓 Student Management System</h5>
+            <small>Empowering Education with Technology</small>
+        </div>
+
+        <!-- Center links -->
+        <ul class="nav mb-3 mb-md-0">
+            <li class="nav-item"><a th:href="@{/}" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a th:href="@{/students}" class="nav-link px-2 text-light">Students</a></li>
+            <li class="nav-item"><a th:href="@{/courses}" class="nav-link px-2 text-light">Courses</a></li>
+            <li class="nav-item"><a th:href="@{/enrollments}" class="nav-link px-2 text-light">Enrollments</a></li>
+            <li class="nav-item"><a th:href="@{/about}" class="nav-link px-2 text-light">About</a></li>
+        </ul>
+
+        <!-- Right side -->
+        <div>
+            <small>&copy; 2025 Student Management System | All Rights Reserved</small>
+        </div>
+    </div>
+</footer>
+
+<!-- Custom Footer CSS -->
+<style>
+    .custom-footer {
+        background: #0d6efd; /* Primary Blue (Bootstrap theme color) */
+        width: 100%; /* Ensures full end-to-end width */
+    }
+
+    .custom-footer .nav-link {
+        transition: color 0.2s ease;
+    }
+
+    .custom-footer .nav-link:hover {
+        color: #ffc107; /* Amber hover effect */
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="footer">
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 Student Management System</p>
+    </footer>
+</div>
+</body>
+</html>
+ -->
