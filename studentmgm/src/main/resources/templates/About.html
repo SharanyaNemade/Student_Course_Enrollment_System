@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- ===== HEADER ===== -->
+    <header th:replace="fragments/header :: header"></header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="flex-grow-1">
+        <div class="container py-5">
+            <!-- Page Title -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold text-primary">About Our Student Management System</h1>
+                <p class="lead text-muted">Efficiently managing students, courses, and enrollments since 2025 🚀</p>
+            </div>
+
+            <!-- About Description -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/3184655/pexels-photo-3184655.jpeg"
+						     class="img-fluid rounded shadow-sm" alt="Team working">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3 class="text-secondary">Who We Are</h3>
+                    <p>
+                        Our Student Management System is designed to simplify academic administration. 
+                        From course registrations to student enrollments, it provides a centralized platform 
+                        for educators and administrators to manage data seamlessly.
+                    </p>
+                    <p>
+                        Built with modern technologies like <strong>Spring Boot</strong>, 
+                        <strong>Thymeleaf</strong>, and <strong>Bootstrap</strong>, 
+                        the system ensures reliability, scalability, and user-friendliness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mission, Vision, Values -->
+            <div class="row text-center mb-5">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-primary">🎯 Our Mission</h5>
+                            <p>To empower institutions with a simple, efficient, and reliable way to manage students and courses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-success">🌍 Our Vision</h5>
+                            <p>Creating a world where education management is effortless, digital, and accessible to everyone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-warning">🤝 Our Values</h5>
+                            <p>Innovation, reliability, and student-first approach in every feature we build.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer Info -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="fw-bold">👨‍💻 Developed By</h4>
+                    <p class="text-muted"><strong>Sharanya Nemade</strong> | <strong> 🚀 Student Management System Project</strong> | <strong> 📖 Learning Never Stops </strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer th:replace="fragments/footer :: footer"></footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
